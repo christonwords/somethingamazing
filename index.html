@@ -54,162 +54,37 @@
         <p>The official exclusive release of SOMETHING AMAZING. Stream all 20 songs here before they hit DSPs.</p>
 
         <!-- Cover Art -->
-        <img src="https://github.com/christonwords/somethingamazing/releases/download/v1/cover.jpg" alt="Album Cover" class="album-cover">
+        <img src="https://raw.githubusercontent.com/christonwords/somethingamazing/main/cover.jpg" alt="Album Cover" class="album-cover">
 
         <p class="note">Yes, you can tab, turn off your screen and still listen.</p>
 
         <!-- Tracklist -->
         <div id="tracklist">
-            <div class="track">
-                <p>Track 1 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.1.wav" type="audio/wav">
-                </audio>
-            </div>
-            
-            <div class="track">
-                <p>Track 2 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.2.wav" type="audio/wav">
-                </audio>
-            </div>
+            <!-- Loop through 20 tracks -->
+            <script>
+                const tracklist = document.getElementById("tracklist");
 
-            <div class="track">
-                <p>Track 3 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.3.wav" type="audio/wav">
-                </audio>
-            </div>
+                for (let i = 1; i <= 20; i++) {
+                    let trackDiv = document.createElement("div");
+                    trackDiv.classList.add("track");
 
-            <div class="track">
-                <p>Track 4 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.4.wav" type="audio/wav">
-                </audio>
-            </div>
+                    trackDiv.innerHTML = `
+                        <p>Track ${i} - TITLE</p>
+                        <audio controls>
+                            <source src="https://raw.githubusercontent.com/christonwords/somethingamazing/main/tracks/Track${i}.wav" type="audio/wav">
+                        </audio>
+                    `;
 
-            <div class="track">
-                <p>Track 5 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.5.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 6 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.6.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 7 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.7.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 8 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.8.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 9 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.9.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 10 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.10.wav" type="audio/wav">
-                </audio>
-            </div>
-            
-            <div class="track">
-                <p>Track 11 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.11.wav" type="audio/wav">
-                </audio>
-            </div>
-            
-            <div class="track">
-                <p>Track 12 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.12.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 13 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.13.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 14 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.14.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 15 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.15.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 16 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.16.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 17 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.17.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 18 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.18.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 19 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.19.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <div class="track">
-                <p>Track 20 - TITLE</p>
-                <audio controls>
-                    <source src="https://github.com/christonwords/somethingamazing/releases/download/v1/Track.20.wav" type="audio/wav">
-                </audio>
-            </div>
-
-            <!-- Add tracks 11-20 following the same format -->
-            <!-- Make sure to replace track titles accordingly -->
-
+                    tracklist.appendChild(trackDiv);
+                }
+            </script>
         </div>
 
         <!-- Contact Section -->
         <div class="contact">
             <p>Follow me:</p>
-            <a href="instagram.com/christonwords/" target="_blank">Instagram</a>
-            <a href="christonmusic1@gmail.com">Email</a>
+            <a href="https://instagram.com/christonwords/" target="_blank">Instagram</a>
+            <a href="mailto:christonmusic1@gmail.com">Email</a>
             <a href="https://x.com/christonwords" target="_blank">Twitter</a>
         </div>
     </div>
